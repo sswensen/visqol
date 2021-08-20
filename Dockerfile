@@ -16,4 +16,4 @@ WORKDIR /visqol
 
 RUN bazel build :visqol -c opt
 
-ENTRYPOINT ["./bazel-bin/visqol"]
+ENTRYPOINT ["tail", "-f", "/dev/null"]

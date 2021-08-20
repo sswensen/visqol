@@ -4,6 +4,5 @@ version: '3'
 services:
   visqol:
     build: .
-    command: --reference_file /moretestdata/CA01_01.wav --degraded_file /moretestdata/CA01_01.wav --verbose --use_speech_mode
     volumes:
       - ./moretestdata:/moretestdata
