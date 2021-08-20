@@ -4,7 +4,6 @@ version: '3'
 services:
   visqol:
     build: .
-    command: --reference_file /ref1.wav --degraded_file /deg1.wav --verbose --use_speech_mode
+    command: --reference_file /moretestdata/CA01_01.wav --degraded_file /moretestdata/CA01_01.wav --verbose --use_speech_mode
     volumes:
-      - ./bird_caw1.wav:/ref1.wav
-      - ./bird_caw1.wav:/deg1.wav
+      - ./moretestdata:/moretestdata
